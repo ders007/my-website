@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Current Date and Time</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showDateTime()">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+  </nav>
+  <div class="container">
+    <h1>Current Date and Time</h1>
+    <p id="datetime"></p>
+  </div>
+
+  <script>
+    function showDateTime() {
+      setInterval(() => {
+        document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
